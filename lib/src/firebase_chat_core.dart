@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
+
 import 'firebase_chat_core_config.dart';
 import 'util.dart';
 
@@ -130,6 +131,9 @@ class FirebaseChatCore {
       'updatedAt': FieldValue.serverTimestamp(),
       'userIds': users.map((u) => u.id).toList(),
       'userRoles': null,
+      'lastMessage': "",
+      'lastMessageSeen': false,
+      'lastMessageUserID': ""
     });
 
     return types.Room(
