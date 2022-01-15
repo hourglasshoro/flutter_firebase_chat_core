@@ -7,7 +7,7 @@ As mentioned in [How it works?](firebase-overview#how-it-works), you will need t
 
 ```dart
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+import 'package:colapo/pkg/flutter_firebase_chat_core/lib/flutter_firebase_chat_core.dart';
 
 await FirebaseChatCore.instance.createUserInFirestore(
   types.User(
@@ -32,7 +32,7 @@ Alternatively, you can use the `FirebaseChatCore.instance.users()` stream which 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+import 'package:colapo/pkg/flutter_firebase_chat_core/lib/flutter_firebase_chat_core.dart';
 
 class UsersPage extends StatelessWidget {
   const UsersPage({Key? key}) : super(key: key);
@@ -59,7 +59,7 @@ When you have access to that `uid` or you have the whole `User` class from the `
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+import 'package:colapo/pkg/flutter_firebase_chat_core/lib/flutter_firebase_chat_core.dart';
 
 class UsersPage extends StatelessWidget {
   const UsersPage({Key? key}) : super(key: key);
@@ -93,7 +93,7 @@ To render user's rooms you use the `FirebaseChatCore.instance.rooms()` stream. `
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+import 'package:colapo/pkg/flutter_firebase_chat_core/lib/flutter_firebase_chat_core.dart';
 
 class RoomsPage extends StatelessWidget {
   const RoomsPage({Key? key}) : super(key: key);
@@ -120,7 +120,7 @@ class RoomsPage extends StatelessWidget {
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+import 'package:colapo/pkg/flutter_firebase_chat_core/lib/flutter_firebase_chat_core.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({Key? key}) : super(key: key);
